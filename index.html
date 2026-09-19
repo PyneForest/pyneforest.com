@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PyneForest</title>
 
     <style>
     body {
         background-color: white;
         padding: 40px;
+
         * {
             box-sizing: border-box;
         }
 
-        h1 {
-            width: 50%;
-            text-align: center;
-            margin: 0 auto;
-            font-size: 60px;
+        html,
+        body {
+            margin: 0;
+            min-height: 100%;
         }
-        h2 {
-            width: 50%;
-            text-align: center;
-            margin: 0 auto 20px;
+
+        body {
+            background-color: white;
+            min-height: 100vh;
+            padding: clamp(16px, 5vw, 40px);
+            display: flex;
+            flex-direction: column;
         }
-        h3 {
-            width: 50%;
-            text-align: center;
-            margin: 0 auto;
-        }
-        ul1 {
-            width: 50%;
-            text-align: center;
-            margin: 0 auto 20px;
-        }
+
+        h1,
+        h2,
+        h3,
         h4 {
-            width: 50%;
+            width: min(100%, 600px);
+            margin-left: auto;
+            margin-right: auto;
             text-align: center;
-            margin: 0 auto;
         }
+
+        h1 {
+            font-size: clamp(36px, 10vw, 60px);
+        }
+
         footer {
             margin-top: auto;
-            text-align: center;
             padding-top: 30px;
+            text-align: center;
             color: #666;
         }
     }
